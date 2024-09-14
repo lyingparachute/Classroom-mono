@@ -36,15 +36,15 @@ services:
     networks:
       - classroom-network
 
-#  frontend:
-#    build:
-#      context: ./frontend/
-#      dockerfile: docker/Dockerfile
-#    container_name: frontend
-#    ports:
-#      - "80:80"
-#    networks:
-#      - classroom-network
+  frontend:
+    build:
+      context: ./frontend/
+      dockerfile: docker/Dockerfile
+    container_name: frontend
+    ports:
+      - "80:80"
+    networks:
+      - classroom-network
 
 volumes:
   db_data:
