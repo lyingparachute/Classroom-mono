@@ -6,6 +6,22 @@
   "prefix": "app",
   "sourceRoot": "./src",
   "tags": [],
+  "generators": {
+    "@schematics/angular:directive": {
+      "prefix": "lp"
+    },
+    "@nx/angular:component": {
+      "prefix": "lp",
+      "styleext": "scss",
+      "changeDetection": "OnPush"
+    },
+    "@nx/angular:library": {
+      "prefix": "lp",
+      "style": "scss",
+      "framework": "angular",
+      "unitTestRunner": "jest"
+    }
+  },
   "targets": {
     "build": {
       "executor": "@angular-devkit/build-angular:browser",
@@ -81,7 +97,7 @@
       "executor": "@nx/jest:jest",
       "outputs": ["{workspaceRoot}/coverage/{projectName}"],
       "options": {
-        "jestConfig": "jest.config.ts"
+        "jestConfig": "jest.config.app.ts"
       }
     },
     "serve-static": {
@@ -145,22 +161,6 @@
         }
       },
       "defaultConfiguration": "production"
-    }
-  },
-  "generators": {
-    "@schematics/angular:directive": {
-      "prefix": "lp"
-    },
-    "@nx/angular:component": {
-      "prefix": "lp",
-      "styleext": "scss",
-      "changeDetection": "OnPush"
-    },
-    "@nx/angular:library": {
-      "prefix": "lp",
-      "style": "scss",
-      "framework": "angular",
-      "unitTestRunner": "jest"
     }
   }
 }

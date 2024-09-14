@@ -1,0 +1,624 @@
+{
+  "version": "6.0",
+  "nxVersion": "19.7.3",
+  "deps": {
+    "nx": "19.7.3",
+    "@nx/jest": "19.7.3"
+  },
+  "pathMappings": {},
+  "nxJsonPlugins": [],
+  "fileMap": {
+    "projectFileMap": {
+      "frontend": [
+        {
+          "file": "frontend/.eslintignore",
+          "hash": "7663861978715868291"
+        },
+        {
+          "file": "frontend/.eslintrc.json",
+          "hash": "12043951082061843309"
+        },
+        {
+          "file": "frontend/.gitignore",
+          "hash": "16399683567307215337"
+        },
+        {
+          "file": "frontend/.prettierignore",
+          "hash": "5407418692668764289"
+        },
+        {
+          "file": "frontend/.prettierrc",
+          "hash": "16267754514737964994"
+        },
+        {
+          "file": "frontend/.vscode/extensions.json",
+          "hash": "17425123947026961272"
+        },
+        {
+          "file": "frontend/README.md",
+          "hash": "10702971995327161636"
+        },
+        {
+          "file": "frontend/docker/Dockerfile",
+          "hash": "12496563654542472178"
+        },
+        {
+          "file": "frontend/jest.config.ts",
+          "hash": "6042031694210218158"
+        },
+        {
+          "file": "frontend/jest.preset.js",
+          "hash": "9430166341120122740"
+        },
+        {
+          "file": "frontend/nx.json",
+          "hash": "6909123143873348882"
+        },
+        {
+          "file": "frontend/package-lock.json",
+          "hash": "12796688101654829824"
+        },
+        {
+          "file": "frontend/package.json",
+          "hash": "13326192058756706671"
+        },
+        {
+          "file": "frontend/project.json",
+          "hash": "3360284502817504829"
+        },
+        {
+          "file": "frontend/public/favicon.ico",
+          "hash": "9303420814833116677"
+        },
+        {
+          "file": "frontend/server.ts",
+          "hash": "7725400200981112307"
+        },
+        {
+          "file": "frontend/src/app/app.component.html",
+          "hash": "13475899881894409154"
+        },
+        {
+          "file": "frontend/src/app/app.component.scss",
+          "hash": "3244421341483603138"
+        },
+        {
+          "file": "frontend/src/app/app.component.spec.ts",
+          "hash": "1706227172846427449"
+        },
+        {
+          "file": "frontend/src/app/app.component.ts",
+          "hash": "10618949556906472799"
+        },
+        {
+          "file": "frontend/src/app/app.config.server.ts",
+          "hash": "12097873308715006308"
+        },
+        {
+          "file": "frontend/src/app/app.config.ts",
+          "hash": "13369618387662422254"
+        },
+        {
+          "file": "frontend/src/app/app.routes.ts",
+          "hash": "5444059180394226570"
+        },
+        {
+          "file": "frontend/src/app/nx-welcome.component.ts",
+          "hash": "7202757059605386240"
+        },
+        {
+          "file": "frontend/src/index.html",
+          "hash": "6971041206375086035"
+        },
+        {
+          "file": "frontend/src/main.server.ts",
+          "hash": "15495802792019926829"
+        },
+        {
+          "file": "frontend/src/main.ts",
+          "hash": "12896014936006372250"
+        },
+        {
+          "file": "frontend/src/styles.scss",
+          "hash": "5195668842064076916"
+        },
+        {
+          "file": "frontend/src/test-setup.ts",
+          "hash": "12935735732682149507"
+        },
+        {
+          "file": "frontend/tsconfig.app.json",
+          "hash": "16616923596177837167"
+        },
+        {
+          "file": "frontend/tsconfig.editor.json",
+          "hash": "1055794200401717100"
+        },
+        {
+          "file": "frontend/tsconfig.json",
+          "hash": "1674464345246387381"
+        },
+        {
+          "file": "frontend/tsconfig.server.json",
+          "hash": "3298907610687776221"
+        },
+        {
+          "file": "frontend/tsconfig.spec.json",
+          "hash": "16287279946930924495"
+        }
+      ],
+      "e2e": [
+        {
+          "file": "frontend/e2e/.eslintrc.json",
+          "hash": "14929211716204551578"
+        },
+        {
+          "file": "frontend/e2e/playwright.config.ts",
+          "hash": "677724900950543441"
+        },
+        {
+          "file": "frontend/e2e/project.json",
+          "hash": "17186258410502716877"
+        },
+        {
+          "file": "frontend/e2e/src/example.spec.ts",
+          "hash": "11880034276146662533"
+        },
+        {
+          "file": "frontend/e2e/tsconfig.json",
+          "hash": "7733746780202869868"
+        }
+      ]
+    },
+    "nonProjectFiles": [
+      {
+        "file": ".github/workflows/ci.yml",
+        "hash": "14709568906347065970"
+      },
+      {
+        "file": ".gitignore",
+        "hash": "12990309872111536764"
+      },
+      {
+        "file": ".idea/.gitignore",
+        "hash": "10286036308014790964"
+      },
+      {
+        "file": ".idea/Classroom-mono.iml",
+        "hash": "7210100432694438571"
+      },
+      {
+        "file": ".idea/checkstyle-idea.xml",
+        "hash": "952840211762341100"
+      },
+      {
+        "file": ".idea/compiler.xml",
+        "hash": "11340175888071535938"
+      },
+      {
+        "file": ".idea/dataSources.xml",
+        "hash": "2520151544453653602"
+      },
+      {
+        "file": ".idea/encodings.xml",
+        "hash": "1780172503112239779"
+      },
+      {
+        "file": ".idea/inspectionProfiles/Project_Default.xml",
+        "hash": "118385448883767569"
+      },
+      {
+        "file": ".idea/jarRepositories.xml",
+        "hash": "17362667078814151884"
+      },
+      {
+        "file": ".idea/misc.xml",
+        "hash": "13315440183993561778"
+      },
+      {
+        "file": ".idea/modules.xml",
+        "hash": "18253820798953086133"
+      },
+      {
+        "file": ".idea/uiDesigner.xml",
+        "hash": "1669276093529694887"
+      },
+      {
+        "file": ".idea/vcs.xml",
+        "hash": "14600148892634157659"
+      },
+      {
+        "file": ".nx/nxw.js",
+        "hash": "11254603345854076312"
+      },
+      {
+        "file": "README.md",
+        "hash": "7073452988562151543"
+      },
+      {
+        "file": "backend/.gitignore",
+        "hash": "17254263372080938668"
+      },
+      {
+        "file": "backend/docker/Dockerfile",
+        "hash": "4913264385134324045"
+      },
+      {
+        "file": "backend/mvnw",
+        "hash": "15069388377727069083"
+      },
+      {
+        "file": "backend/mvnw.cmd",
+        "hash": "13144227073390459929"
+      },
+      {
+        "file": "backend/pom.xml",
+        "hash": "17407719101509980474"
+      },
+      {
+        "file": "backend/src/main/java/com/classroom/backend/BackendApplication.java",
+        "hash": "12729608324383591187"
+      },
+      {
+        "file": "backend/src/main/java/com/classroom/backend/auth/controller/SignInController.java",
+        "hash": "15223609999935222272"
+      },
+      {
+        "file": "backend/src/main/java/com/classroom/backend/auth/model/AuthenticationRequest.java",
+        "hash": "10523766401544572057"
+      },
+      {
+        "file": "backend/src/main/java/com/classroom/backend/auth/model/AuthenticationResponse.java",
+        "hash": "5724898024676534072"
+      },
+      {
+        "file": "backend/src/main/java/com/classroom/backend/auth/model/UpdateRequest.java",
+        "hash": "7172191058143643972"
+      },
+      {
+        "file": "backend/src/main/java/com/classroom/backend/auth/service/AuthenticationService.java",
+        "hash": "10059965763968134376"
+      },
+      {
+        "file": "backend/src/main/java/com/classroom/backend/auth/service/LogoutService.java",
+        "hash": "4027962552952525822"
+      },
+      {
+        "file": "backend/src/main/java/com/classroom/backend/auth/service/UserManagementService.java",
+        "hash": "15746811952598728925"
+      },
+      {
+        "file": "backend/src/main/java/com/classroom/backend/auth/validation/email/EmailMatches.java",
+        "hash": "9790895527253420624"
+      },
+      {
+        "file": "backend/src/main/java/com/classroom/backend/auth/validation/email/EmailMatchesValidator.java",
+        "hash": "9247192455158708850"
+      },
+      {
+        "file": "backend/src/main/java/com/classroom/backend/auth/validation/password/PasswordConstraintValidator.java",
+        "hash": "16697105241403331081"
+      },
+      {
+        "file": "backend/src/main/java/com/classroom/backend/auth/validation/password/PasswordMatches.java",
+        "hash": "7798203290318506665"
+      },
+      {
+        "file": "backend/src/main/java/com/classroom/backend/auth/validation/password/PasswordMatchesValidator.java",
+        "hash": "2600168157239364255"
+      },
+      {
+        "file": "backend/src/main/java/com/classroom/backend/auth/validation/password/ValidPassword.java",
+        "hash": "17928098893031293423"
+      },
+      {
+        "file": "backend/src/main/java/com/classroom/backend/config/ApplicationConfig.java",
+        "hash": "3175513013611303298"
+      },
+      {
+        "file": "backend/src/main/java/com/classroom/backend/config/AsyncConfig.java",
+        "hash": "10199827874931196171"
+      },
+      {
+        "file": "backend/src/main/java/com/classroom/backend/config/jwt/JwtAuthenticationFilter.java",
+        "hash": "6686988710798282634"
+      },
+      {
+        "file": "backend/src/main/java/com/classroom/backend/config/security/AuthenticationConfig.java",
+        "hash": "3831965527713237955"
+      },
+      {
+        "file": "backend/src/main/java/com/classroom/backend/config/security/MethodSecurityConfig.java",
+        "hash": "13214369309495082024"
+      },
+      {
+        "file": "backend/src/main/java/com/classroom/backend/config/security/SecurityConfig.java",
+        "hash": "12184718984566809903"
+      },
+      {
+        "file": "backend/src/main/java/com/classroom/backend/department/Department.java",
+        "hash": "10582382691454325253"
+      },
+      {
+        "file": "backend/src/main/java/com/classroom/backend/department/DepartmentDto.java",
+        "hash": "18392540492873750669"
+      },
+      {
+        "file": "backend/src/main/java/com/classroom/backend/department/DepartmentRepository.java",
+        "hash": "16089025603582766243"
+      },
+      {
+        "file": "backend/src/main/java/com/classroom/backend/department/DepartmentRestController.java",
+        "hash": "12362607544427191848"
+      },
+      {
+        "file": "backend/src/main/java/com/classroom/backend/department/DepartmentService.java",
+        "hash": "11349275268569909179"
+      },
+      {
+        "file": "backend/src/main/java/com/classroom/backend/enums/AcademicTitle.java",
+        "hash": "8222053873544193957"
+      },
+      {
+        "file": "backend/src/main/java/com/classroom/backend/enums/LevelOfEducation.java",
+        "hash": "16555454484862449766"
+      },
+      {
+        "file": "backend/src/main/java/com/classroom/backend/enums/ModeOfStudy.java",
+        "hash": "4001628672215482263"
+      },
+      {
+        "file": "backend/src/main/java/com/classroom/backend/enums/Semester.java",
+        "hash": "9021591713040580673"
+      },
+      {
+        "file": "backend/src/main/java/com/classroom/backend/exception/AccountAlreadyVerifiedException.java",
+        "hash": "3186118417166004895"
+      },
+      {
+        "file": "backend/src/main/java/com/classroom/backend/exception/DepartmentNotFoundException.java",
+        "hash": "9350928503766487547"
+      },
+      {
+        "file": "backend/src/main/java/com/classroom/backend/exception/EntityNotFoundException.java",
+        "hash": "8206856781567308718"
+      },
+      {
+        "file": "backend/src/main/java/com/classroom/backend/exception/InvalidOldPasswordException.java",
+        "hash": "13399415208564371763"
+      },
+      {
+        "file": "backend/src/main/java/com/classroom/backend/exception/InvalidTokenException.java",
+        "hash": "11333258533664474761"
+      },
+      {
+        "file": "backend/src/main/java/com/classroom/backend/exception/RestExceptionHandler.java",
+        "hash": "13557261227584649369"
+      },
+      {
+        "file": "backend/src/main/java/com/classroom/backend/exception/UserAlreadyExistException.java",
+        "hash": "105024412562048344"
+      },
+      {
+        "file": "backend/src/main/java/com/classroom/backend/export/ExcelExporter.java",
+        "hash": "16081126667098332536"
+      },
+      {
+        "file": "backend/src/main/java/com/classroom/backend/export/ExportRestController.java",
+        "hash": "10042250650604487966"
+      },
+      {
+        "file": "backend/src/main/java/com/classroom/backend/export/ExportService.java",
+        "hash": "13333923739963844491"
+      },
+      {
+        "file": "backend/src/main/java/com/classroom/backend/fieldofstudy/FieldOfStudy.java",
+        "hash": "7375748577690281247"
+      },
+      {
+        "file": "backend/src/main/java/com/classroom/backend/fieldofstudy/FieldOfStudyDto.java",
+        "hash": "6181377812439723356"
+      },
+      {
+        "file": "backend/src/main/java/com/classroom/backend/fieldofstudy/FieldOfStudyRepository.java",
+        "hash": "10072055526739591841"
+      },
+      {
+        "file": "backend/src/main/java/com/classroom/backend/fieldofstudy/FieldOfStudyRestController.java",
+        "hash": "2628845681345752315"
+      },
+      {
+        "file": "backend/src/main/java/com/classroom/backend/fieldofstudy/FieldOfStudyService.java",
+        "hash": "12870291657420056980"
+      },
+      {
+        "file": "backend/src/main/java/com/classroom/backend/fileupload/FileUploadUtil.java",
+        "hash": "267833425389106753"
+      },
+      {
+        "file": "backend/src/main/java/com/classroom/backend/mail_sender/EmailException.java",
+        "hash": "12653066247426301331"
+      },
+      {
+        "file": "backend/src/main/java/com/classroom/backend/mail_sender/MailSenderService.java",
+        "hash": "3413920858089323427"
+      },
+      {
+        "file": "backend/src/main/java/com/classroom/backend/pageable/PageableRequest.java",
+        "hash": "14414046247555966679"
+      },
+      {
+        "file": "backend/src/main/java/com/classroom/backend/pageable/PageableService.java",
+        "hash": "756103134156788712"
+      },
+      {
+        "file": "backend/src/main/java/com/classroom/backend/student/Student.java",
+        "hash": "17241169819036009593"
+      },
+      {
+        "file": "backend/src/main/java/com/classroom/backend/student/StudentDto.java",
+        "hash": "1734653659439921237"
+      },
+      {
+        "file": "backend/src/main/java/com/classroom/backend/student/StudentRepository.java",
+        "hash": "12737816598687136047"
+      },
+      {
+        "file": "backend/src/main/java/com/classroom/backend/student/StudentRestController.java",
+        "hash": "296259264909164604"
+      },
+      {
+        "file": "backend/src/main/java/com/classroom/backend/student/StudentService.java",
+        "hash": "1446127717709140819"
+      },
+      {
+        "file": "backend/src/main/java/com/classroom/backend/subject/Subject.java",
+        "hash": "10937245384646572189"
+      },
+      {
+        "file": "backend/src/main/java/com/classroom/backend/subject/SubjectDto.java",
+        "hash": "6046947329183790311"
+      },
+      {
+        "file": "backend/src/main/java/com/classroom/backend/subject/SubjectRepository.java",
+        "hash": "10724626294760229014"
+      },
+      {
+        "file": "backend/src/main/java/com/classroom/backend/subject/SubjectRestController.java",
+        "hash": "2485220406791613287"
+      },
+      {
+        "file": "backend/src/main/java/com/classroom/backend/subject/SubjectService.java",
+        "hash": "5653599620430541720"
+      },
+      {
+        "file": "backend/src/main/java/com/classroom/backend/teacher/Teacher.java",
+        "hash": "10639746864363594384"
+      },
+      {
+        "file": "backend/src/main/java/com/classroom/backend/teacher/TeacherDto.java",
+        "hash": "3393942513003410188"
+      },
+      {
+        "file": "backend/src/main/java/com/classroom/backend/teacher/TeacherRepository.java",
+        "hash": "6990156017427485401"
+      },
+      {
+        "file": "backend/src/main/java/com/classroom/backend/teacher/TeacherRestController.java",
+        "hash": "4535635362552337732"
+      },
+      {
+        "file": "backend/src/main/java/com/classroom/backend/teacher/TeacherService.java",
+        "hash": "5125486955936582824"
+      },
+      {
+        "file": "backend/src/main/java/com/classroom/backend/token/JwtService.java",
+        "hash": "17006434322303298244"
+      },
+      {
+        "file": "backend/src/main/java/com/classroom/backend/token/Token.java",
+        "hash": "14890199196741783192"
+      },
+      {
+        "file": "backend/src/main/java/com/classroom/backend/token/TokenRepository.java",
+        "hash": "11017396011224936396"
+      },
+      {
+        "file": "backend/src/main/java/com/classroom/backend/token/TokenType.java",
+        "hash": "8954678082579798139"
+      },
+      {
+        "file": "backend/src/main/java/com/classroom/backend/user/User.java",
+        "hash": "10672427487860372464"
+      },
+      {
+        "file": "backend/src/main/java/com/classroom/backend/user/UserRepository.java",
+        "hash": "1676160215174496754"
+      },
+      {
+        "file": "backend/src/main/java/com/classroom/backend/user/UserRole.java",
+        "hash": "5332450961602775740"
+      },
+      {
+        "file": "backend/src/main/java/com/classroom/backend/user/email/EmailChangeRequest.java",
+        "hash": "3207038577822860945"
+      },
+      {
+        "file": "backend/src/main/java/com/classroom/backend/user/password/PasswordRequest.java",
+        "hash": "13538261133292955635"
+      },
+      {
+        "file": "backend/src/main/java/com/classroom/backend/user/password/PasswordResetToken.java",
+        "hash": "9260854741696231133"
+      },
+      {
+        "file": "backend/src/main/java/com/classroom/backend/user/password/PasswordResetTokenRepository.java",
+        "hash": "9180009124469539315"
+      },
+      {
+        "file": "backend/src/main/java/com/classroom/backend/user/register/RegisterRequest.java",
+        "hash": "13504311060118860430"
+      },
+      {
+        "file": "backend/src/main/java/com/classroom/backend/user/register/VerificationToken.java",
+        "hash": "14141659726371231076"
+      },
+      {
+        "file": "backend/src/main/java/com/classroom/backend/user/register/VerificationTokenRepository.java",
+        "hash": "12020483991682272689"
+      },
+      {
+        "file": "backend/src/main/resources/application.yml",
+        "hash": "527541226413425918"
+      },
+      {
+        "file": "backend/src/main/resources/import/departments.sql",
+        "hash": "9400180369830322237"
+      },
+      {
+        "file": "backend/src/main/resources/import/fieldsOfStudy.sql",
+        "hash": "8794174008690055213"
+      },
+      {
+        "file": "backend/src/main/resources/import/relations.sql",
+        "hash": "12446299841091954932"
+      },
+      {
+        "file": "backend/src/main/resources/import/students.sql",
+        "hash": "12108368252559648036"
+      },
+      {
+        "file": "backend/src/main/resources/import/subjects.sql",
+        "hash": "4667042174475864606"
+      },
+      {
+        "file": "backend/src/main/resources/import/teachers.sql",
+        "hash": "5830803651801014867"
+      },
+      {
+        "file": "backend/src/main/resources/import/users.sql",
+        "hash": "4101808184718925571"
+      },
+      {
+        "file": "backend/src/test/java/com/classroom/backend/BackendApplicationTests.java",
+        "hash": "5557622409142641389"
+      },
+      {
+        "file": "docker-compose.yml",
+        "hash": "12789852958195015370"
+      },
+      {
+        "file": "nx",
+        "hash": "17165975525224888679"
+      },
+      {
+        "file": "nx.bat",
+        "hash": "16119536321561623970"
+      },
+      {
+        "file": "nx.json",
+        "hash": "11612319757455830690"
+      }
+    ]
+  }
+}

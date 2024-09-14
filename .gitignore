@@ -1,0 +1,122 @@
+# Ignore files and directories for both frontend and backend
+
+# Node.js
+node_modules/
+npm-debug.log
+yarn-error.log
+npm-debug.log*
+
+# Nx specific
+dist/
+tmp/
+.idea/
+.vscode/
+*.iml
+
+# Angular
+.angular/cache/
+.angular/
+coverage/
+out-tsc/
+
+# Yarn
+.yarn/
+.pnp.*
+.pnp.*.?
+.cache/
+.yarnrc.yml
+
+# macOS
+.DS_Store
+
+# Linux
+*~
+
+# Editor
+.vscode/
+*.suo
+*.ntvs*
+*.njsproj
+*.sln
+*.sw?
+
+# Logs
+logs
+*.log
+yarn-debug.log*
+yarn-error.log*
+lerna-debug.log*
+
+# Java
+*.class
+*.jar
+*.war
+*.nar
+*.ear
+*.class
+*.log
+*.idx
+*.local
+*.profile
+*.bat
+*.cfg
+
+# Spring Boot
+target/
+!src/main/webapp
+
+# Dependency directories
+**/node_modules/
+
+# Dependency caches
+**/package-lock.json
+**/yarn.lock
+
+# Project files
+# IntelliJ IDEA
+/.idea/*
+/.idea
+*.ipr
+*.iws
+*.iml
+*.hprof
+*.orig
+
+# Eclipse
+.project
+.classpath
+_settings/
+
+# NetBeans
+nbproject/private/
+build/
+nbbuild/
+nbdist/
+nbactions.xml
+nb-configuration.xml
+
+# IntelliJ
+.idea/
+*.iml
+*.ipr
+
+# VS Code
+.vscode/
+
+# Temp files
+*.tmp
+tmp/
+.vscode/
+*.swp
+*tmp
+*~
+*.sw?
+
+# OS generated files
+.DS_Store
+Thumbs.db
+
+# Exclude all files containing 'eslint' in their name
+*eslint*
+
+# End of .gitignore

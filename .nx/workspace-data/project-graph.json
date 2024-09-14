@@ -1,0 +1,238 @@
+{
+  "nodes": {
+    "e2e": {
+      "name": "e2e",
+      "type": "e2e",
+      "data": {
+        "root": "frontend/e2e",
+        "name": "e2e",
+        "$schema": "../node_modules/nx/schemas/project-schema.json",
+        "projectType": "application",
+        "sourceRoot": "e2e/src",
+        "implicitDependencies": [
+          "frontend"
+        ],
+        "targets": {},
+        "tags": []
+      }
+    },
+    "frontend": {
+      "name": "frontend",
+      "type": "app",
+      "data": {
+        "root": "frontend",
+        "sourceRoot": "./src",
+        "name": "frontend",
+        "includedScripts": [],
+        "tags": [
+          "npm:private"
+        ],
+        "metadata": {
+          "targetGroups": {}
+        },
+        "targets": {
+          "build": {
+            "executor": "@angular-devkit/build-angular:browser",
+            "outputs": [
+              "{options.outputPath}"
+            ],
+            "options": {
+              "outputPath": "dist/frontend/browser",
+              "index": "./src/index.html",
+              "main": "./src/main.ts",
+              "polyfills": [
+                "zone.js"
+              ],
+              "tsConfig": "tsconfig.app.json",
+              "inlineStyleLanguage": "scss",
+              "assets": [
+                {
+                  "glob": "**/*",
+                  "input": "public"
+                }
+              ],
+              "styles": [
+                "./src/styles.scss"
+              ],
+              "scripts": []
+            },
+            "configurations": {
+              "production": {
+                "budgets": [
+                  {
+                    "type": "initial",
+                    "maximumWarning": "500kb",
+                    "maximumError": "1mb"
+                  },
+                  {
+                    "type": "anyComponentStyle",
+                    "maximumWarning": "2kb",
+                    "maximumError": "4kb"
+                  }
+                ],
+                "outputHashing": "all"
+              },
+              "development": {
+                "buildOptimizer": false,
+                "optimization": false,
+                "vendorChunk": true,
+                "extractLicenses": false,
+                "sourceMap": true,
+                "namedChunks": true
+              }
+            },
+            "defaultConfiguration": "production",
+            "parallelism": true
+          },
+          "serve": {
+            "executor": "@angular-devkit/build-angular:dev-server",
+            "configurations": {
+              "production": {
+                "buildTarget": "frontend:build:production"
+              },
+              "development": {
+                "buildTarget": "frontend:build:development"
+              }
+            },
+            "defaultConfiguration": "development",
+            "options": {},
+            "parallelism": true
+          },
+          "extract-i18n": {
+            "executor": "@angular-devkit/build-angular:extract-i18n",
+            "options": {
+              "buildTarget": "frontend:build"
+            },
+            "configurations": {},
+            "parallelism": true
+          },
+          "lint": {
+            "executor": "@nx/eslint:lint",
+            "options": {
+              "lintFilePatterns": [
+                "./src"
+              ]
+            },
+            "configurations": {},
+            "parallelism": true
+          },
+          "test": {
+            "executor": "@nx/jest:jest",
+            "outputs": [
+              "{workspaceRoot}/coverage/{projectName}"
+            ],
+            "options": {
+              "jestConfig": "jest.config.ts"
+            },
+            "configurations": {},
+            "parallelism": true
+          },
+          "serve-static": {
+            "executor": "@nx/web:file-server",
+            "options": {
+              "buildTarget": "frontend:build",
+              "port": 4200,
+              "spa": true
+            },
+            "configurations": {},
+            "parallelism": true
+          },
+          "server": {
+            "dependsOn": [
+              "build"
+            ],
+            "executor": "@angular-devkit/build-angular:server",
+            "options": {
+              "outputPath": "dist/frontend/server",
+              "main": "server.ts",
+              "tsConfig": "tsconfig.server.json",
+              "inlineStyleLanguage": "scss"
+            },
+            "configurations": {
+              "production": {
+                "outputHashing": "media"
+              },
+              "development": {
+                "buildOptimizer": false,
+                "optimization": false,
+                "sourceMap": true,
+                "extractLicenses": false,
+                "vendorChunk": true
+              }
+            },
+            "defaultConfiguration": "production",
+            "parallelism": true
+          },
+          "serve-ssr": {
+            "executor": "@angular-devkit/build-angular:ssr-dev-server",
+            "configurations": {
+              "development": {
+                "browserTarget": "frontend:build:development",
+                "serverTarget": "frontend:server:development"
+              },
+              "production": {
+                "browserTarget": "frontend:build:production",
+                "serverTarget": "frontend:server:production"
+              }
+            },
+            "defaultConfiguration": "development",
+            "options": {},
+            "parallelism": true
+          },
+          "prerender": {
+            "executor": "@angular-devkit/build-angular:prerender",
+            "options": {
+              "routes": [
+                "/"
+              ]
+            },
+            "configurations": {
+              "development": {
+                "browserTarget": "frontend:build:development",
+                "serverTarget": "frontend:server:development"
+              },
+              "production": {
+                "browserTarget": "frontend:build:production",
+                "serverTarget": "frontend:server:production"
+              }
+            },
+            "defaultConfiguration": "production",
+            "parallelism": true
+          }
+        },
+        "$schema": "node_modules/nx/schemas/project-schema.json",
+        "projectType": "application",
+        "prefix": "app",
+        "generators": {
+          "@schematics/angular:directive": {
+            "prefix": "lp"
+          },
+          "@nx/angular:component": {
+            "prefix": "lp",
+            "styleext": "scss",
+            "changeDetection": "OnPush"
+          },
+          "@nx/angular:library": {
+            "prefix": "lp",
+            "style": "scss",
+            "framework": "angular",
+            "unitTestRunner": "jest"
+          }
+        },
+        "implicitDependencies": []
+      }
+    }
+  },
+  "externalNodes": {},
+  "dependencies": {
+    "e2e": [
+      {
+        "source": "e2e",
+        "target": "frontend",
+        "type": "implicit"
+      }
+    ],
+    "frontend": []
+  },
+  "version": "6.0"
+}
