@@ -12,7 +12,6 @@
     },
     "@nx/angular:component": {
       "prefix": "lp",
-      "styleext": "scss",
       "changeDetection": "OnPush"
     },
     "@nx/angular:library": {
