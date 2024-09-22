@@ -15,6 +15,7 @@
     "skipDefaultLibCheck": true,
     "baseUrl": ".",
     "paths": {
+      "@frontend/dynamic-icon": ["libs/dynamic-icon/src/index.ts"],
       "@frontend/sidebae": ["sidebae/src/index.ts"],
       "@frontend/sidebar": ["libs/sidebar/src/index.ts"]
     }
