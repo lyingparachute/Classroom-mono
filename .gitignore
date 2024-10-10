@@ -53,8 +53,6 @@ lerna-debug.log*
 *.war
 *.nar
 *.ear
-*.class
-*.log
 *.idx
 *.local
 *.profile
@@ -78,7 +76,6 @@ target/
 /.idea
 *.ipr
 *.iws
-*.iml
 *.hprof
 *.orig
 
@@ -95,28 +92,17 @@ nbdist/
 nbactions.xml
 nb-configuration.xml
 
-# IntelliJ
-.idea/
-*.iml
-*.ipr
-
-# VS Code
-.vscode/
-
 # Temp files
 *.tmp
-tmp/
-.vscode/
 *.swp
 *tmp
-*~
-*.sw?
 
 # OS generated files
-.DS_Store
 Thumbs.db
 
 # Exclude all files containing 'eslint' in their name
 *eslint*
+
+.xml
 
 # End of .gitignore
