@@ -1,4 +1,4 @@
-package com.classroom.backend.mail_sender;
+package com.classroom.backend.mailsender;
 
 import jakarta.mail.MessagingException;
 import jakarta.mail.internet.MimeMessage;

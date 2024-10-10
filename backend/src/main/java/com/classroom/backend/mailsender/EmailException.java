@@ -1,4 +1,4 @@
-package com.classroom.backend.mail_sender;
+package com.classroom.backend.mailsender;
 
 import lombok.extern.slf4j.Slf4j;
 
